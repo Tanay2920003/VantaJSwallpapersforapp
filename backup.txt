@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanta.js Background</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
     <style>
         body, html {
             margin: 0;
@@ -18,16 +18,17 @@
 </head>
 <body>
 <script>
-    VANTA.WAVES({
+    VANTA.FOG({
         el: document.body,
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x305
+        highlightColor: 0xd0d56,
+        midtoneColor: 0x50505,
+        lowlightColor: 0x0,
+        baseColor: 0x50ef4
     })
 </script>
 </body>
