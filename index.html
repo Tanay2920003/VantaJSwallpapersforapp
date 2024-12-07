@@ -6,6 +6,7 @@
     <title>Vanta.js Background</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -25,7 +26,7 @@
 </head>
 <body>
 <script>
-    VANTA.WAVES({
+    VANTA.BIRDS({
         el: document.body,
         mouseControls: true,
         touchControls: true,
@@ -34,7 +35,11 @@
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0x305
+        colorMode: "lerp",
+            birdSize: 1.8,
+            separation: 40.0,
+            alignment: 45.0,
+            quantity: 2.0,
     })
 </script>
 </body>
